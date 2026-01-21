@@ -95,6 +95,10 @@ DIVIDE(
 
 Average Tenure = AVERAGE(customer_churn[tenure])
 
+```
+
+---
+
 ---
 
 ## 🔍 Key Insights & Findings
