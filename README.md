@@ -95,21 +95,27 @@ DIVIDE(
 
 Average Tenure = AVERAGE(customer_churn[tenure])
 
+---
+
+## 🔍 Key Insights & Findings
+
+- **Month-to-month contracts** have the highest churn rate, indicating low long-term customer commitment.
+- Customers in the **early tenure period (0–1 year)** are more likely to churn compared to long-term customers.
+- **Higher monthly charges** are strongly associated with increased churn, highlighting price sensitivity.
+- Customers **without tech support** show significantly higher churn, proving support services are a strong retention driver.
+- Lack of **online security services** increases the likelihood of customer churn.
+- The **electronic check** payment method exhibits the highest churn rate among all payment options.
+
 
 ## 📌 Conclusion
 
-This analysis highlights critical factors influencing customer churn and provides actionable insights that can help businesses improve customer retention strategies.
+This customer churn analysis highlights the key factors influencing customer retention in a subscription-based business.  
+By identifying churn patterns across contracts, tenure, pricing, and service usage, the dashboard provides actionable insights that can help businesses reduce churn and improve customer lifetime value.
 
----
+Focusing on long-term contracts, competitive pricing, enhanced support services, and secure payment options can significantly improve customer retention outcomes.
 
-## 👤 Author
+## ✍️ Author
 
 **Omkar Udawant**  
-Data Science & Analytics Intern  
-📍 Pune, India  
-
----
-
-## 📜 Note
-
-This project was created for learning and internship purposes.
+Data Science & Analytics Intern – Future Interns  
+📍 Pune, India
