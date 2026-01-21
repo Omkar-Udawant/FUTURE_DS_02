@@ -43,7 +43,7 @@ This dashboard answers key business questions such as:
 
 ### 🔹 Page 1: Customer Churn & Retention Overview
 
-![Churn Overview](Screenshots/page1_overview.png)
+![Churn Overview](https://github.com/Omkar-Udawant/FUTURE_DS_02/blob/main/Screenshots/Page1.png)
 
 **Purpose:**  
 Provides management with a high-level snapshot of customer churn and retention performance.
@@ -62,7 +62,7 @@ Provides management with a high-level snapshot of customer churn and retention p
 
 ### 🔹 Page 2: Customer Churn Patterns & Retention Drivers
 
-![Churn Drivers](Screenshots/page2_patterns_drivers.png)
+![Churn Drivers](https://github.com/Omkar-Udawant/FUTURE_DS_02/blob/main/Screenshots/Page2.png)
 
 **Purpose:**  
 Designed to uncover **churn patterns and key drivers** influencing customer retention.
