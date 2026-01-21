@@ -1,75 +1,100 @@
-# FUTURE_DS_02
-Data Science Task2 - Power BI dashboard analyzing customer churn patterns and key retention drivers for a subscription-based business.
+# 📊 Customer Churn & Retention Analysis | Power BI
 
-# 📊 Customer Churn & Retention Analysis
-
-This project presents an interactive **Power BI dashboard** that analyzes customer churn and retention behavior for a subscription-based business.  
-The objective is to identify **churn patterns**, **high-risk customer segments**, and **key retention drivers** to support data-driven decision-making.
-
----
-
-## 🎯 Project Objective
-
-- Understand overall customer churn and retention performance
-- Identify churn patterns across contracts, tenure, and services
-- Analyze the impact of pricing and support services on churn
-- Build a visually clear and professional Power BI dashboard
+![Power BI](https://img.shields.io/badge/Tool-Power%20BI-yellow)
+![Domain](https://img.shields.io/badge/Domain-Data%20Science%20%26%20Analytics-blue)
+![Status](https://img.shields.io/badge/Project-Completed-success)
+![Internship](https://img.shields.io/badge/Internship-Future%20Interns-purple)
 
 ---
 
-## 🛠 Tools Used
+## 🚀 Project Overview
 
-- **Power BI** – Data modeling, visualization, and dashboard creation
-- **Microsoft Excel** – Dataset storage and preprocessing
+This project was developed as part of my **Data Science & Analytics Internship at Future Interns**.  
+The objective of this project is to analyze **customer churn behavior** and identify **key retention drivers** for a subscription-based business using an **interactive Power BI dashboard**.
 
----
-
-## 📂 Project Files
-
-- `FUTURE_DS_02.pbix`  
-  → Power BI dashboard file  
-
-- `customer_churn_data.xlsx`  
-  → Customer churn dataset  
-
-- `Screenshots/`  
-  → Dashboard preview images  
+The dashboard focuses on **customer behavior analysis and business storytelling**, helping stakeholders understand *why customers churn* and *what factors improve retention*, enabling **data-driven retention strategies**.
 
 ---
 
-## 📈 Dashboard Structure
+## 🛠️ Tools & Technologies
+
+- **Power BI Desktop** – Dashboard design & visualization  
+- **DAX (Data Analysis Expressions)** – KPI and churn calculations  
+- **Microsoft Excel** – Dataset handling  
+- **Data Modeling** – Relationships & measures  
+
+---
+
+## 🎯 Business Objectives
+
+This dashboard answers key business questions such as:
+
+- What is the overall **customer churn rate**?  
+- How many customers are **retained vs churned**?  
+- Which **contract types** have the highest churn?  
+- How does **customer tenure** impact churn behavior?  
+- What is the impact of **pricing (monthly charges)** on churn?  
+- How do **support and security services** influence customer retention?  
+- Which **payment methods** show higher churn risk?  
+
+---
+
+## 🖼️ Dashboard Pages Overview
 
 ### 🔹 Page 1: Customer Churn & Retention Overview
-- Total customers
-- Churn rate and churned customers
-- Churn by contract type
-- Churn by internet service
-- Overall churn distribution
+
+![Churn Overview](Screenshots/page1_overview.png)
+
+**Purpose:**  
+Provides management with a high-level snapshot of customer churn and retention performance.
+
+**Key KPIs & Visuals:**
+- Total Customers  
+- Churned Customers  
+- Churn Rate (%)  
+- Average Customer Tenure  
+- Overall Churn Distribution  
+- Churn by Contract Type  
+- Churn by Internet Service  
+- Churn Rate by Payment Method  
+
+---
 
 ### 🔹 Page 2: Customer Churn Patterns & Retention Drivers
-- Churn across customer tenure groups
-- Churn rate by payment method
-- Impact of tech support (heatmap)
-- Pricing impact (average monthly charges)
-- Effect of add-on and security services
+
+![Churn Drivers](Screenshots/page2_patterns_drivers.png)
+
+**Purpose:**  
+Designed to uncover **churn patterns and key drivers** influencing customer retention.
+
+**Key Visuals:**
+- Churn Across Customer Tenure Groups  
+- Impact of Tech Support on Churn (Heatmap)  
+- Pricing Impact (Average Monthly Charges vs Churn)  
+- Churn Pattern by Online Security Usage  
 
 ---
 
-## 🔍 Key Insights
+## 📐 Key DAX Measures Used
 
-- Month-to-month contract customers show the highest churn
-- Customers in early tenure periods are more likely to churn
-- Higher monthly charges are associated with higher churn
-- Lack of tech support and security services increases churn risk
-- Electronic check payment method has a higher churn rate
+```DAX
+Total Customers = COUNT(customer_churn[customerID])
 
----
+Churned Customers =
+CALCULATE(
+    COUNT(customer_churn[customerID]),
+    customer_churn[Churn] = "Yes"
+)
 
-## 📸 Dashboard Preview
+Churn Rate % =
+DIVIDE(
+    [Churned Customers],
+    [Total Customers],
+    0
+)
 
-Screenshots of the dashboard are available in the `Screenshots` folder.
+Average Tenure = AVERAGE(customer_churn[tenure])
 
----
 
 ## 📌 Conclusion
 
